@@ -1,5 +1,24 @@
+html {
+
+    background-image: url(background.jpeg);
+    
+    background-repeat: no-repeat;
+    
+    background-position: center center;
+    
+    background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+    
+    -moz-background-size: cover;
+    
+    -o-background-size: cover;
+    
+    background-size: cover;
+    
+    }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
