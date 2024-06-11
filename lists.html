@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Павлов Даниил Игоревич</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="lists.html">Мои интересы</a></li>
+            <li><a href="email.html">Свяжитесь со мной</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Любимые музыкальные группы</h2>
+            <ul>
+                <li>BTC </li>
+                <li>2 дня лета </li>
+                <li>Хавали навали </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Любимые фильмы</h2>
+            <ol>
+                <li>Барби</li>
+                <li>Голый пистолет</li>
+                <li>Зеленый слоник</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>Свяжитесь со мной:</p>
+        <ul>
+            <li><a href="https://t.me/Daniil_video">Telegram</a></li>
+
+        </ul>
+        <p>&copy; <span id="currentYear"></span> Все права защищены.</p>
+        <p>Текущая дата и время: <span id="currentDateTime"></span></p>
+    </footer>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById("currentDateTime").textContent = now.toLocaleString();
+        }, 1000);
+    </script>
+</body>
+</html>
